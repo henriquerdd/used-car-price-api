@@ -19,6 +19,6 @@ import { Report } from './reports/report.entity';
     ReportsModule
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService]
 })
 export class AppModule {}
