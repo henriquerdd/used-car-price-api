@@ -3,9 +3,17 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email": "henrique@gmail.com",
-  "password": "hello",
-  "asdf": "asdaksdjhaskjdhajs"
+  "email": "jovem@gmail.com",
+  "password": "password"
+}
+
+### Login
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "jovem@gmail.com",
+  "password": "password"
 }
 
 ### Find one user
@@ -24,3 +32,6 @@ Content-Type: application/json
 
 ### Delete one user
 DELETE http://localhost:3000/auth/1
+
+### Get current logged in user
+GET http://localhost:3000/auth/whoami
